@@ -8,61 +8,10 @@ const Contact: React.FC = () => {
     subject: '',
     message: ''
   });
-  
-  const [formStatus, setFormStatus] = useState<{
-    submitted: boolean;
-    success: boolean;
-    message: string;
-  } | null>(null);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    // Validate form
-    if (!formData.name || !formData.email || !formData.message) {
-      setFormStatus({
-        submitted: true,
-        success: false,
-        message: 'Please fill out all required fields.'
-      });
-      return;
-    }
-    
-    // Email validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(formData.email)) {
-      setFormStatus({
-        submitted: true,
-        success: false,
-        message: 'Please enter a valid email address.'
-      });
-      return;
-    }
-    
-    // Simulate form submission success
-    setFormStatus({
-      submitted: true,
-      success: true,
-      message: 'Thanks for your message! I\'ll get back to you soon.'
-    });
-    
-    // Reset form after successful submission
-    setFormData({
-      name: '',
-      email: '',
-      subject: '',
-      message: ''
-    });
-    
-    // Reset success message after 5 seconds
-    setTimeout(() => {
-      setFormStatus(null);
-    }, 5000);
   };
 
   return (
@@ -77,13 +26,12 @@ const Contact: React.FC = () => {
             Have a project in mind or want to discuss potential opportunities? Feel free to reach out!
           </p>
         </div>
-        
+
         <div className="flex flex-col lg:flex-row gap-12 max-w-6xl mx-auto">
           {/* Contact Information */}
           <div className="w-full lg:w-2/5">
             <div className="bg-slate-800 rounded-lg p-8 h-full">
               <h3 className="text-2xl font-bold text-white mb-6">Contact Information</h3>
-              
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 rounded-full bg-blue-600/20 flex items-center justify-center flex-shrink-0">
@@ -94,7 +42,6 @@ const Contact: React.FC = () => {
                     <p className="text-white">hamsadixit202@gmail.com</p>
                   </div>
                 </div>
-                
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 rounded-full bg-blue-600/20 flex items-center justify-center flex-shrink-0">
                     <Phone className="text-blue-400" size={20} />
@@ -104,18 +51,16 @@ const Contact: React.FC = () => {
                     <p className="text-white">9686536826</p>
                   </div>
                 </div>
-                
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 rounded-full bg-blue-600/20 flex items-center justify-center flex-shrink-0">
                     <MapPin className="text-blue-400" size={20} />
                   </div>
                   <div>
                     <p className="text-slate-400 text-sm mb-1">Location</p>
-                    <p className="text-white">Bangalore,India</p>
+                    <p className="text-white">Bangalore, India</p>
                   </div>
                 </div>
               </div>
-              
               <div className="mt-12">
                 <h4 className="text-lg font-semibold text-white mb-4">Connect with me</h4>
                 <p className="text-slate-400 mb-4">
@@ -124,16 +69,19 @@ const Contact: React.FC = () => {
               </div>
             </div>
           </div>
-          
+
           {/* Contact Form */}
           <div className="w-full lg:w-3/5">
-            <form onSubmit={handleSubmit} className="bg-white rounded-lg shadow-md p-8">
-              {formStatus && (
-                <div className={`mb-6 p-4 rounded-lg ${formStatus.success ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}`}>
-                  {formStatus.message}
-                </div>
-              )}
-              
+            <form
+              action="https://formsubmit.co/hamsadixit202@gmail.com"
+              method="POST"
+              className="bg-white rounded-lg shadow-md p-8"
+            >
+              {/* Redirect after submission */}
+              {/* <input type="hidden" name="_next" value="https://your-website.com/thank-you" /> */}
+              {/* Disable CAPTCHA */}
+              {/* <input type="hidden" name="_captcha" value="false" /> */}
+
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-2">
@@ -149,7 +97,7 @@ const Contact: React.FC = () => {
                     required
                   />
                 </div>
-                
+
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-2">
                     Your Email <span className="text-red-500">*</span>
@@ -165,7 +113,7 @@ const Contact: React.FC = () => {
                   />
                 </div>
               </div>
-              
+
               <div className="mb-6">
                 <label htmlFor="subject" className="block text-sm font-medium text-slate-700 mb-2">
                   Subject
@@ -179,7 +127,7 @@ const Contact: React.FC = () => {
                   className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors"
                 />
               </div>
-              
+
               <div className="mb-6">
                 <label htmlFor="message" className="block text-sm font-medium text-slate-700 mb-2">
                   Your Message <span className="text-red-500">*</span>
@@ -194,7 +142,7 @@ const Contact: React.FC = () => {
                   required
                 ></textarea>
               </div>
-              
+
               <button
                 type="submit"
                 className="px-6 py-3 bg-blue-600 text-white font-medium rounded-lg transition-all hover:bg-blue-700 hover:shadow-lg flex items-center justify-center gap-2"

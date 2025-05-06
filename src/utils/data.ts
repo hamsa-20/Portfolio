@@ -68,7 +68,7 @@ export const projects = [
     id: 1,
     title: 'Connectify',
     description: 'Engineered a real-time messaging platform using the MERN stack and Socket.IO, enabling instant text and image sharing.',
-    image: 'https://www.google.com/imgres?q=chat%20app%20photo&imgurl=https%3A%2F%2Ffiles.ably.io%2Fghost%2Fprod%2F2023%2F06%2Fthe-ultimate-guide-to-chat-app-architecture.png&imgrefurl=https%3A%2F%2Fably.com%2Fblog%2Fchat-app-architecture&docid=_Oe4X65gixFgyM&tbnid=pMfbh7Jm2c0V6M&vet=12ahUKEwjlr8aFxI-NAxXlh68BHS3BFVMQM3oECEoQAA..i&w=1920&h=1180&hcb=2&ved=2ahUKEwjlr8aFxI-NAxXlh68BHS3BFVMQM3oECEoQAA',
+    image: 'C:\Users\Hamsa\OneDrive\Desktop\Portfolio\public\images.jpeg',
     category: 'Full Stack',
     technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'Socket.IO'],
     github: 'https://github.com/hamsa-20/Connectify',
