@@ -8,22 +8,22 @@ const Footer: React.FC = () => {
     { 
       id: 'github', 
       icon: <Github size={20} />, 
-      url: 'https://github.com/hamsadixit' 
+      url: 'https://github.com/hamsa-20' 
     },
     { 
       id: 'linkedin', 
       icon: <Linkedin size={20} />, 
-      url: 'https://linkedin.com/in/hamsadixit' 
+      url: 'https://www.linkedin.com/in/hamsa-dixit-ba571025a/' 
     },
     { 
       id: 'twitter', 
       icon: <Twitter size={20} />, 
-      url: 'https://twitter.com/hamsadixit' 
+      url: 'https://x.com/HamsaDixit' 
     },
     { 
       id: 'instagram', 
       icon: <Instagram size={20} />, 
-      url: 'https://instagram.com/hamsadixit' 
+      url: 'https://instagram.com/hamsa_dixit' 
     }
   ];
 
@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <h3 className="text-2xl font-bold">
-              Hamsa<span className="text-blue-400">.dev</span>
+              <span className="text-blue-400"></span>
             </h3>
             <p className="text-slate-400 mt-2">
               Creating exceptional digital experiences

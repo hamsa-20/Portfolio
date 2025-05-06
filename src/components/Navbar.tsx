@@ -48,7 +48,7 @@ const Navbar: React.FC = () => {
             className="font-bold text-xl md:text-2xl text-blue-600"
             onClick={(e) => scrollToSection(e, '#home')}
           >
-            Hamsa<span className="text-slate-800 dark:text-white">.dev</span>
+            <span className="text-slate-800 dark:text-white"></span>
           </a>
 
           <div className="hidden md:flex items-center space-x-8">

@@ -67,16 +67,7 @@ const Projects: React.FC = () => {
                           <Github size={20} />
                         </a>
                       )}
-                      {project.live && (
-                        <a 
-                          href={project.live} 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center text-white hover:bg-blue-600 transition-colors"
-                        >
-                          <ExternalLink size={20} />
-                        </a>
-                      )}
+                   
                     </div>
                   </div>
                 </div>

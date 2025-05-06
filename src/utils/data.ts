@@ -66,62 +66,33 @@ export const skills = [
 export const projects = [
   {
     id: 1,
-    title: 'E-Commerce Platform',
-    description: 'A full-featured e-commerce platform with product management, cart functionality, and payment processing.',
-    image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    title: 'Connectify',
+    description: 'Engineered a real-time messaging platform using the MERN stack and Socket.IO, enabling instant text and image sharing.',
+    image: 'https://www.google.com/imgres?q=chat%20app%20photo&imgurl=https%3A%2F%2Ffiles.ably.io%2Fghost%2Fprod%2F2023%2F06%2Fthe-ultimate-guide-to-chat-app-architecture.png&imgrefurl=https%3A%2F%2Fably.com%2Fblog%2Fchat-app-architecture&docid=_Oe4X65gixFgyM&tbnid=pMfbh7Jm2c0V6M&vet=12ahUKEwjlr8aFxI-NAxXlh68BHS3BFVMQM3oECEoQAA..i&w=1920&h=1180&hcb=2&ved=2ahUKEwjlr8aFxI-NAxXlh68BHS3BFVMQM3oECEoQAA',
     category: 'Full Stack',
-    technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'Stripe'],
-    github: 'https://github.com/hamsadixit/ecommerce-platform',
-    live: 'https://ecommerce-platform.example.com'
+    technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'Socket.IO'],
+    github: 'https://github.com/hamsa-20/Connectify',
+    // live: 'https://ecommerce-platform.example.com'
   },
   {
     id: 2,
-    title: 'Task Management App',
-    description: 'A collaborative task management application with real-time updates and team workspaces.',
-    image: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    category: 'Full Stack',
-    technologies: ['React', 'TypeScript', 'Firebase', 'Tailwind CSS'],
-    github: 'https://github.com/hamsadixit/task-management',
-    live: 'https://task-management.example.com'
+    title: 'TravelSphere',
+    description: ' Developed an interactive travel website using React.js, enhancing user experience for destination exploration.',
+    image: 'https://www.google.com/imgres?q=travel%20website%20pics&imgurl=https%3A%2F%2Fres.cloudinary.com%2Fdbxcernxw%2Fimage%2Fupload%2Fv1680855030%2FMridul.Tech%2FProjects%2FTravel_Website_Video_7e40170cae_rto0lz.webp&imgrefurl=https%3A%2F%2Fwww.mridul.tech%2Fprojects%2Ftravel-website-with-video-background&docid=Gj4SpyXkjEagOM&tbnid=i7n-PlOe-bXerM&vet=12ahUKEwiT7MO-xI-NAxXRb_UHHWs-DtMQM3oECHgQAA..i&w=1920&h=1080&hcb=2&ved=2ahUKEwiT7MO-xI-NAxXRb_UHHWs-DtMQM3oECHgQAA',
+    category: 'ReactJs',
+    technologies: ['React',  'Tailwind CSS'],
+    github: 'https://github.com/hamsa-20/TravelSphere',
+    // live: 'https://task-management.example.com'
   },
   {
     id: 3,
-    title: 'Weather Dashboard',
-    description: 'A weather dashboard that provides real-time weather data and forecasts for locations worldwide.',
-    image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    category: 'Frontend',
-    technologies: ['React', 'OpenWeather API', 'Chart.js', 'Tailwind CSS'],
-    github: 'https://github.com/hamsadixit/weather-dashboard',
-    live: 'https://weather-dashboard.example.com'
-  },
-  {
-    id: 4,
-    title: 'Blog Platform',
-    description: 'A feature-rich blogging platform with markdown support, user authentication, and comments.',
-    image: 'https://images.pexels.com/photos/261662/pexels-photo-261662.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    title: 'Restauarant',
+    description: 'A Restaurant website for food ordering ,dine and many more .',
+    image: 'https://www.google.com/imgres?q=restaurant%20website&imgurl=https%3A%2F%2Fcolorlib.com%2Fwp%2Fwp-content%2Fuploads%2Fsites%2F2%2Frestaurant-wordpress-themes1.jpg&imgrefurl=https%3A%2F%2Fcolorlib.com%2Fwp%2Fwordpress-restaurant-themes%2F&docid=kWJZgpbSmofFtM&tbnid=2gb77KtZj0IE8M&vet=12ahUKEwidtsn8xI-NAxXTb_UHHRNyAk8QM3oECFkQAA..i&w=1100&h=728&hcb=2&ved=2ahUKEwidtsn8xI-NAxXTb_UHHRNyAk8QM3oECFkQAA',
     category: 'Full Stack',
-    technologies: ['Next.js', 'MongoDB', 'Auth0', 'Tailwind CSS'],
-    github: 'https://github.com/hamsadixit/blog-platform',
-    live: 'https://blog-platform.example.com'
-  },
-  {
-    id: 5,
-    title: 'Fitness Tracker',
-    description: 'A mobile-friendly fitness tracking application to log workouts and monitor progress.',
-    image: 'https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    category: 'Mobile',
-    technologies: ['React Native', 'Firebase', 'Redux', 'Chart.js'],
-    github: 'https://github.com/hamsadixit/fitness-tracker',
-    live: null
-  },
-  {
-    id: 6,
-    title: 'Recipe Finder',
-    description: 'An application to discover recipes based on available ingredients, dietary restrictions, and preferences.',
-    image: 'https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    category: 'Frontend',
-    technologies: ['React', 'Spoonacular API', 'Styled Components'],
-    github: 'https://github.com/hamsadixit/recipe-finder',
-    live: 'https://recipe-finder.example.com'
+    technologies: ['React', 'Node.js', 'Express', 'MongoDB'],
+    github: 'https://github.com/hamsa-20/restaurant-website',
+    // live: 'https://weather-dashboard.example.com'
   }
+  
 ];
