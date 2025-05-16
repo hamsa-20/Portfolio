@@ -68,7 +68,9 @@ export const projects = [
     id: 1,
     title: 'Connectify',
     description: 'Engineered a real-time messaging platform using the MERN stack and Socket.IO, enabling instant text and image sharing.',
-    image: 'C:\Users\Hamsa\OneDrive\Desktop\Portfolio\public\images.jpeg',
+    image: '/images/chat.jpeg', // ✅ Works only if placed in public/images/
+
+
     category: 'Full Stack',
     technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'Socket.IO'],
     github: 'https://github.com/hamsa-20/Connectify',
@@ -78,7 +80,8 @@ export const projects = [
     id: 2,
     title: 'TravelSphere',
     description: ' Developed an interactive travel website using React.js, enhancing user experience for destination exploration.',
-    image: 'https://www.google.com/imgres?q=travel%20website%20pics&imgurl=https%3A%2F%2Fres.cloudinary.com%2Fdbxcernxw%2Fimage%2Fupload%2Fv1680855030%2FMridul.Tech%2FProjects%2FTravel_Website_Video_7e40170cae_rto0lz.webp&imgrefurl=https%3A%2F%2Fwww.mridul.tech%2Fprojects%2Ftravel-website-with-video-background&docid=Gj4SpyXkjEagOM&tbnid=i7n-PlOe-bXerM&vet=12ahUKEwiT7MO-xI-NAxXRb_UHHWs-DtMQM3oECHgQAA..i&w=1920&h=1080&hcb=2&ved=2ahUKEwiT7MO-xI-NAxXRb_UHHWs-DtMQM3oECHgQAA',
+    image: '/images/download.jpg' // ✅ Works only if placed in public/images/
+,
     category: 'ReactJs',
     technologies: ['React',  'Tailwind CSS'],
     github: 'https://github.com/hamsa-20/TravelSphere',
@@ -88,7 +91,8 @@ export const projects = [
     id: 3,
     title: 'Restauarant',
     description: 'A Restaurant website for food ordering ,dine and many more .',
-    image: 'https://www.google.com/imgres?q=restaurant%20website&imgurl=https%3A%2F%2Fcolorlib.com%2Fwp%2Fwp-content%2Fuploads%2Fsites%2F2%2Frestaurant-wordpress-themes1.jpg&imgrefurl=https%3A%2F%2Fcolorlib.com%2Fwp%2Fwordpress-restaurant-themes%2F&docid=kWJZgpbSmofFtM&tbnid=2gb77KtZj0IE8M&vet=12ahUKEwidtsn8xI-NAxXTb_UHHRNyAk8QM3oECFkQAA..i&w=1100&h=728&hcb=2&ved=2ahUKEwidtsn8xI-NAxXTb_UHHRNyAk8QM3oECFkQAA',
+    image: '/images/rest.jpeg'
+,
     category: 'Full Stack',
     technologies: ['React', 'Node.js', 'Express', 'MongoDB'],
     github: 'https://github.com/hamsa-20/restaurant-website',
