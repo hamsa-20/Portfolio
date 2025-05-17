@@ -66,7 +66,7 @@ const Navbar: React.FC = () => {
                 {link.name}
               </a>
             ))}
-            
+            /* Add more links here if needed */
             <button
               onClick={toggleTheme}
               className="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
