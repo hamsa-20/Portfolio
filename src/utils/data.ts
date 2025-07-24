@@ -78,18 +78,18 @@ export const projects = [
   },
   {
     id: 2,
-    title: 'TravelSphere',
-    description: ' Developed an interactive travel website using React.js, enhancing user experience for destination exploration.',
-    image: '/images/download.jpg' // ✅ Works only if placed in public/images/
+    title: 'StayFinder',
+    description: ' StayFinder is a full-stack web application that allows users to browse, book, and list rental properties. It features user authentication, property search and filtering, image uploads, and responsive design for a smooth experience across all devices.',
+    image: '/images/logo.jpg' // ✅ Works only if placed in public/images/
 ,
     category: 'ReactJs',
     technologies: ['React',  'Tailwind CSS'],
-    github: 'https://github.com/hamsa-20/TravelSphere',
-    // live: 'https://task-management.example.com'
+    github: 'https://github.com/hamsa-20/StayFinder',
+    live: 'https://stayfinder1.onrender.com/'
   },
   {
     id: 3,
-    title: 'Restauarant',
+    title: 'Restaurant',
     description: 'A Restaurant website for food ordering ,dine and many more .',
     image: '/images/rest.jpeg'
 ,
